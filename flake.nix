@@ -53,7 +53,7 @@
       rec {
 
         packages.default = pkgs.stdenv.mkDerivation {
-          pname = "stmviewer";
+          pname = "mcuviewer";
           version = "v1.2.4";
           
           # src = pkgs.fetchgit {
@@ -156,7 +156,7 @@
             ls -R
             tree -L 3
             cmake --install . 
-            mv $out/bin/MCUViewer $out/bin/stmviewer
+            mv $out/bin/MCUViewer $out/bin/mcuviewer
             cp -r ../third_party/stlink/chips $out/bin/chips
           '';
         };
