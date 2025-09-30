@@ -157,7 +157,7 @@
             tree -L 3
             cmake --install . 
             mv $out/bin/MCUViewer $out/bin/mcuviewer
-            cp -r ../third_party/stlink/chips $out/bin/chips
+            #cp -r ../third_party/stlink/chips $out/bin/chips
           '';
         };
 
